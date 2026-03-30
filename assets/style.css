@@ -1,0 +1,76 @@
+/* Container bọc ngoài để chống tràn trên mobile */
+.sm-table-wrapper {
+    width: 100%;
+    margin: 40px 0;
+    overflow-x: auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.sm-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #333;
+    min-width: 600px;
+}
+
+/* Header sang trọng với Gradient */
+.sm-table thead tr {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    text-align: left;
+}
+
+.sm-table th {
+    padding: 18px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border: none;
+}
+
+/* Body của bảng */
+.sm-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+/* Hiệu ứng dòng xen kẽ nhẹ nhàng */
+.sm-table tbody tr:nth-child(even) {
+    background-color: #fcfcfd;
+}
+
+/* Hiệu ứng Hover cực mượt */
+.sm-table tbody tr:hover {
+    background-color: #f5f7ff;
+    transform: scale(1.002);
+    box-shadow: inset 4px 0 0 #667eea;
+    cursor: default;
+}
+
+/* Bo góc cho STT và Badge cho Lớp */
+.sm-stt {
+    font-weight: bold;
+    color: #764ba2;
+}
+
+.sm-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background: #eef2ff;
+    color: #4f46e5;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .sm-table th, .sm-table td {
+        padding: 12px 15px;
+    }
+}
